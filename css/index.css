@@ -1,0 +1,114 @@
+body{
+    background-color: rgb(80, 148, 168);
+}
+h1{
+    text-align: center;
+}
+.container{
+    display: flex;
+}
+
+
+.box1{
+    box-sizing: border-box;
+    background-color: grey;
+    border: 1px solid black;
+    margin: 20px;
+    margin-top: 2px;
+    width: 30%;
+    display: flex;
+    flex-flow: row-reverse;
+}
+.box2{
+    box-sizing: border-box;
+    background-color: grey;
+    border: 1px solid black;
+    margin: 20px;
+    margin-top: 2px;
+    width: 30%;
+    display: flex;
+    flex-flow: row-reverse;
+
+}
+.box3{
+    box-sizing: border-box;
+    background-color: grey;
+    border: 1px solid black;
+    margin: 20px;
+    margin-top: 2px;
+    display: flex;
+    flex-flow: row-reverse;
+    width: 30%;
+
+}
+.pink{
+    background-color: rgb(196, 110, 153);
+    border: 1px solid black;
+    position: relative;
+    top: 0px;
+    height: 20px;
+    padding: 5px;
+    margin: 0px;
+}
+.red{
+    background-color: rgb(145, 39, 35);
+    color: white;
+    border: 1px solid black;
+    position: relative;
+    top: 0px;
+    height: 20px;
+    padding: 5px;
+    margin: 0px;
+}
+.blue{
+    background-color: rgb(38, 38, 90);
+    color: yellowgreen;
+    border: 1px solid black;
+    position: relative;
+    top: 0px;
+    height: 20px;
+    padding: 5px;
+    margin: 0px;
+}
+p{
+    padding-left: 10px;
+    margin: 0px;
+    margin-top: 20px;
+}
+@media (max-width:991px) and (min-width:768px){
+    body{
+        background-color: rgb(46, 148, 92);
+    }
+    .container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .box1{
+        width: 40%;
+    }
+    .box2{
+        width: 40%;
+    }
+    .box3{
+        width: 85%;
+    }
+}
+@media (max-width:767px){
+    body{
+        background-color: rgb(184, 93, 93);
+    }
+    .container{
+        flex-flow: column;
+        align-items: center;
+
+    }
+    .box1{
+        width: 90%;
+    }
+    .box2{
+        width: 90%;
+    }
+    .box3{
+        width: 90%;
+    }
+}
